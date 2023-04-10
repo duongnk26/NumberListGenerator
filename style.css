@@ -1,0 +1,127 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/Number-List-Generator-BG.png);
+    color: #fff;
+  }
+  
+  .container {
+    height: 100%;
+    margin: 0% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+  }
+  
+  .title {
+    padding: 0px 50px;
+    box-sizing: border-box;
+    background: #172C3C;
+    border: 5px solid #4D938A;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .input {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .heading1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  
+  .heading2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  .heading3 {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  input {
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background: #172C3C;
+    border: 2px solid #4D938A;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background: #4D938A;
+    border: 2px solid #172C3C;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #172C3C;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  .result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    background: #172C3C;
+    border: 5px solid #4D938A;
+    border-radius: 15px;
+  }
+  
+  .result-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .result-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .button-copy-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .copy-button {
+    width: 25px;
+    height: 30px;
+    display: none;
+  }
+  
+  .copy-button:hover {
+    cursor: pointer;
+  }
+
+  #alert-copy-text {
+    color: #4D938A;
+    display: none;
+    font-size: 12px;
+  }
