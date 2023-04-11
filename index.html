@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width" initial-scale=1>
   <title>Number List Generator</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
@@ -15,28 +15,36 @@
 <body>
   <div class="container">
     
+    <!-- title -->
     <div class="title">
       <p class="heading1">Number List Generator</p>
     </div>
     
+    <!-- input -->
     <div class="input">
-      <div class="input-numberstart">
+      <div class="input-numberstart" id="div-startnumber">
         <p class="heading3">Number start</p>
-        <input type="number" id="numberstart" name="numberstart" onchange="getNumberStart()">
+        <input type="number" id="startnumber" name="numberstart" onchange="setStartNumber()">
+        <p class="errmess" id="err-startnumber">&nbsp;</p>
       </div>
       
-      <div class="input-numberend">
+      <div class="input-numberend" id="div-endnumber">
         <p class="heading3">Number end</p>
-        <input type="number" id="numberend" name="end" onchange="getNumberEnd()">
+        <input type="number" id="endnumber" name="endnumber" onchange="setEndNumber()">
+        <p class="errmess" id="err-endnumber">&nbsp;</p>
       </div>
       
-      <div class="input-jump">
+      <div class="input-jump" id="div-jump">
         <p class="heading3">Jump (default = 1)</p>
-        <input type="number" id="jump" name="jump" onchange="getJump()">
+        <input type="number" id="jump" name="jump" onchange="setJump()">
+        <p class="errmess" id="err-jump">&nbsp;</p>
       </div>
       
-      <button class="input-generate" onclick="genNumberList()">GENERATE</button>
+      <!-- button generate -->
+      <button class="input-generate" onclick="genNumberList()" id="buttongenerate">GENERATE</button>
     </div>
+
+    <!-- result area -->
     <div class="result">
       <div class="result-header">
         <p class="heading2">
@@ -44,9 +52,11 @@
         </p>
       </div>
       <div class="result-content">
-        <p id="number-result"></p>
+        <p id="result"></p>
+
+        <!-- copy to clipboard -->
         <div class="button-copy-text">
-          <img src="./img/copy-button.png" alt="" class="copy-button" id="copy-text" onclick="copyText()">
+          <img src="/img/copy-button.png" alt="" class="copy-button" id="copy-text" onclick="copyText()">
           <p id="alert-copy-text">Text copied to clipboard</p>
         </div>
       </div>
