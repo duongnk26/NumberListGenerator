@@ -35,13 +35,11 @@ html {
   }
   
   .heading1 {
-    font-family: Montserrat;
     font-weight: 700;
     font-size: 36px;
   }
   
   .heading2 {
-    font-family: Montserrat;
     font-weight: 700;
     font-size: 24px;
   }
@@ -76,6 +74,10 @@ html {
   
   button:hover {
     cursor: pointer;
+  }
+
+  button:disabled {
+    opacity: 0.5;;
   }
   
   .result {
@@ -124,4 +126,10 @@ html {
     color: #4D938A;
     display: none;
     font-size: 12px;
+  }
+
+  .errmess {
+    color: red;
+    font-size: 10px;
+    line-height: 0px;
   }
